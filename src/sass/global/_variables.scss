@@ -1,0 +1,50 @@
+//_variables.scss
+
+
+//===========================================
+//   レイアウト (pxは書かない)
+//===========================================
+$pc-inner: 1000;  // pc版inner幅 
+$pc-sidePadding: 40; //pc版サイドのpadding
+$pc-inner-sum: calc($pc-inner + $pc-sidePadding * 2); 
+// ※$pc-inner-sum ~ $breakpoint までの間は画面幅により全体が可変
+
+$breakpoint: 768; // ブレイクポイント (pc版カンプとsp版カンプの境界)
+
+$sp-sidePadding: 16; //sp版サイドのpadding
+
+$pc-camp: 1400;
+$sp-camp: 375; // ※$sp-camp より下は画面幅により全体が可変
+
+//headerの高さ
+$pc-header-height: 80;
+$sp-header-height: 80;
+
+
+//===========================================
+//   フォント
+//===========================================
+$fontFamily: 'Arial', 'メイリオ', Meiryo, sans-serif; //基本のテキストフォント
+// $jp-fontFamily: 'Noto Sans JP', sans-serif; //日本語のみ適応させるフォント
+$en-fontFamily: 'Arial', sans-serif;  //英数字のみ適応させるフォント
+// $title-fontFamily: 'Noto Sans JP', sans-serif; //タイトル設定に使うフォント
+
+
+//===========================================
+//   カラー
+//===========================================
+$text-color: #000000; // テキストカラー
+$base-color: #FD7A23; //一番よく使われるカラー (ファーストカラー)
+$bg-color: #F0F0F0; //背景色
+$accent-color: #0C59F2; //アクセントカラー (セカンドカラー)
+$hover-color: #25E662; //ホバーした時のカラー
+$white: #ffffff;
+$black: #000000;
+$red: #FF0000;
+
+//===========================================
+//   z-index
+//===========================================
+$z-header: 100;
+$z-drawer: 99;
+$z-drawer-icon: 101; 

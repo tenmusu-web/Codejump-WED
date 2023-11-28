@@ -1,0 +1,91 @@
+
+@use "../../global" as *;
+
+.p-single {
+
+}
+
+.p-single__inner {
+
+}
+
+
+.p-single__wrapper {
+  max-width: rem(700);
+  margin: 0 auto;
+
+}
+
+.p-single__head {
+  margin-bottom: rem(100);
+  @include mq(sp) {
+      margin-bottom: rem(70);
+  }
+  h2 {
+    @include font(36, 41, 200, 400);
+    @include mq(sp) {
+        @include font(32, 36, 200, 400);
+    }
+  }
+}
+
+.c-head {
+
+}
+
+.p-single__body {
+}
+
+.p-single__meta {
+  margin-top: rem(20);
+
+}
+
+.p-single__tag {
+  display: inline-block;
+  @include font(20, 24, 0, 400);
+  color: $white;
+  background: $black;
+  padding: rem(4) rem(16);
+}
+
+.p-single__thumbnail {
+  width: 100%;
+  margin-top: rem(20);
+  img {
+    object-fit: cover;
+  }
+}
+
+.p-single__content {
+  margin-top: rem(40);
+
+  p {
+    @include font(16, 24, 0, 400);
+    &:nth-of-type(n+2) {
+      margin-top: rem(20);
+    }
+  }
+}
+
+.p-single__more {
+  display: flex;
+  margin-top: rem(40);
+
+  a {
+    transition: all  0.3s ease;
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+
+}
+
+.p-single__prev {
+  margin-left: auto;
+}
+
+.p-single__next {
+  margin-right: auto;
+}
+

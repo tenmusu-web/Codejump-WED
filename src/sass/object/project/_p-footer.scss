@@ -1,0 +1,64 @@
+
+@use "../../global" as *;
+
+.p-footer {
+
+}
+
+
+.p-footer__wrapper {
+  padding-top: rem(40);
+  padding-bottom: rem(20);
+  @include mq(sp) {
+      padding-top: rem(48);
+  }
+}
+
+.p-footer__wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @include mq(sp) {
+      display: block;
+  }
+}
+
+.p-footer__logo {
+
+  
+  a {
+    transition: all  0.3s ease;
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+
+  img {
+    width: rem(100);
+    height: auto;
+    aspect-ratio: 100 / 25;
+
+    @include mq(sp) {
+        width: rem(80);
+    }
+  }
+}
+
+.p-footer__info {
+  @include mq(sp) {
+      margin-top: rem(8);
+  }
+  p {
+    @include font(14, 21, 0, 400);
+  }
+}
+
+.p-footer__small {
+  margin-top: rem(40);
+
+  small {
+    @include font(12, 14, 0, 400);
+  }
+}
+

@@ -1,0 +1,14 @@
+@use "../../global" as *;
+
+.c-head {
+  margin-bottom: rem(100);
+  @include mq(sp) {
+      margin-bottom: rem(70);
+  }
+  h2 {
+    @include font(36, 41, 300, 400);
+    @include mq(sp) {
+        @include font(32, 36, 300, 400);
+    }
+  }
+}

@@ -1,0 +1,15 @@
+@use "../global" as *;
+
+.l-inner {
+    position: relative;
+    width: 100%;
+    max-width: rem($pc-inner-sum);
+    padding: 0 rem($pc-sidePadding);
+    margin: 0 auto;
+
+    @include mq(sp) {
+        width: 100%;
+        padding: 0 rem($sp-sidePadding);
+    }
+}
+

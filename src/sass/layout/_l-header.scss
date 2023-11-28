@@ -1,0 +1,11 @@
+@use "../global" as *;
+
+.l-header {
+  background: $bg-color;
+  height: rem($pc-header-height);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: $z-header;
+}

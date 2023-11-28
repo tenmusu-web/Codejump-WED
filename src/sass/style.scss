@@ -1,0 +1,21 @@
+@use "foundation";
+@use "layout";
+@use "object/component";
+@use "object/project";
+@use "object/utility";
+
+.test {
+    color:red;
+    font-size: 100px;
+    position: relative;
+    padding: 100px 200px;
+    font-weight: 700;
+}
+
+::placeholder {
+    color: gray;
+}
+
+.image {
+    background-image: url(image@1x.png);
+}

@@ -1,0 +1,137 @@
+
+@use "../../global" as *;
+.p-archive {
+
+}
+
+.p-archive__inner {
+
+}
+
+.p-archive__wrapper {
+
+}
+
+.p-archive__head {
+
+}
+
+.p-archive__body {
+
+}
+
+.p-archive__tabs {
+  display: flex;
+  border-bottom: rem(1) solid $black;
+}
+
+.p-archive__tab {
+  display: inline-block;
+  @include font(14, 19, 0, 400);
+  text-align: center;
+  width: rem(240);
+  padding-bottom: rem(20);
+  cursor: pointer;
+  @include mq(sp) {
+      width: 50%;
+      padding-bottom: rem(18);
+  }
+
+  &.is-active {
+    border-bottom: rem(3) solid $black;
+  }
+}
+
+.p-archive__menus {
+
+}
+
+.p-archive__items {
+  display: none;
+  &.is-active {
+    display: block;
+  }
+}
+
+.p-archive__item {
+  display: block;
+  border-bottom: rem(1) solid #ccc;
+  padding-top: rem(48);
+  padding-bottom: rem(48);
+  transition: all  0.3s ease;
+  &:hover {
+    background: rgba(0, 0, 0, 0.1);
+  }
+  @include mq(sp) {
+      padding-top: rem(40);
+      padding-bottom: rem(38);
+      padding-right: rem(80);
+  }
+}
+
+.p-archive__meta {
+  display: flex;
+  gap: rem(10);
+  align-items: center;
+}
+
+.p-archive__time {
+  @include font(14, 16, 0, 400);
+}
+
+.p-archive__tag {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @include font(12, 14, 0, 400);
+  color: $white;
+  background: $black;
+  width: rem(50);
+  height: rem(20);
+}
+
+.p-archive__title {
+  @include font(14, 19, 0, 400);
+  margin-top: rem(4);
+  
+  @include mq(sp) {
+      @include font(14, 24, 0, 400);
+  }
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: rem(12);
+  margin-top: rem(30);
+  a {
+    transition: all  0.3s ease;
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+  
+}
+
+.page-numbers {
+  display: inline-block;
+  width: rem(30);
+  height: rem(30);
+  border: rem(1) solid #ccc;
+  text-align: center;
+  @include font(18, 30, 0, 400);
+
+  &.current {
+    background: #777;
+    color: $white;
+  }
+
+  &.next,.prev {
+    border: none;
+    @include font(24, 30, 0, 700);
+    color: #777;
+  }
+}
+
+
+

@@ -1,0 +1,45 @@
+@use "../../global" as *;
+
+.p-business {
+  margin-top: rem(118);
+}
+
+.p-business__inner {
+
+}
+
+
+.p-business__wrapper {
+}
+
+.p-business__head {
+
+}
+
+
+.p-business__body {
+  display: flex;
+  justify-content: center;
+  gap: rem(64);
+  margin-top: rem(47);
+  @include mq(sp) {
+      display: block;
+      margin-top: rem(32);
+  }
+}
+
+.p-business__cards {
+  &:nth-of-type(1) {
+    margin-top: rem(100);
+    @include mq(sp) {
+        margin-top: 0;
+    }
+  }
+
+  @include mq(sp) {
+      & + & {
+        margin-top: rem(27);
+      }
+  }
+
+}

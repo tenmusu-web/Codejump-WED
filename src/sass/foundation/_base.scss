@@ -1,0 +1,43 @@
+@use "../global" as *;
+
+
+html {
+    //pc-innerSum ~ breakpointまでは画面幅に応じて全体が可変
+    @media screen and (max-width: #{px($pc-inner-sum) - 1px}) and (min-width: #{px($breakpoint)}) {
+		font-size: calc(1600 / #{$pc-inner-sum} * 1vw); 
+	}
+    // ※この値より下は画面幅により全体が可変
+    @media screen and (max-width: #{px($breakpoint) - 1px}) {
+        font-size: calc(1600 / #{$sp-camp} * 1vw);
+    }
+    scroll-behavior: smooth;
+    scroll-padding-top: rem($pc-header-height);
+    @include mq(sp) {
+        scroll-padding-top: rem($sp-header-height);
+    }
+}
+
+
+body {
+    color: $text-color;
+    font-family: $fontFamily;
+    background: $bg-color;
+}
+
+a {
+    text-decoration: none;
+    transition: 0.3s;
+    color: $text-color;
+
+    @media (hover: hover) {
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+

@@ -1,0 +1,57 @@
+@use "../../global" as *;
+
+
+.c-form {
+
+}
+
+.c-form__items {
+
+}
+
+.c-form__row {
+  & + & {
+    margin-top: rem(30);
+  }
+
+  dt {
+    @include font(14, 16, 0, 400);
+  }
+
+  dd {
+    margin-top: rem(5);
+  }
+
+  input,textarea {
+    width: 100%;
+    border: none;
+  }
+
+  input {
+    @include font(14, 24, 0, 400);
+    height: rem(50);
+    resize: none;
+    padding-left: rem(20)
+  }
+
+  textarea {
+    height: rem(180);
+    resize: none;
+    padding: rem(20);
+  }
+
+  span {
+    color: $red;
+  }
+
+}
+
+.c-form__button {
+  margin-top: rem(30);
+  text-align: center;
+  input {
+    padding: 12px 36px;
+    cursor: pointer;
+  }
+}
+
